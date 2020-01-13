@@ -1,0 +1,8 @@
+scheduler job name tingtliu_test_route_table
+python bootflash:/tingtliu_compare_route.py
+
+end-job
+
+scheduler schedule name tingtliu_test_route_table
+  job name tingtliu_test_route_table
+  time start now repeat 0:0:1
